@@ -1,7 +1,5 @@
 ﻿using BBCSportProject.Common;
-using BBCSportProject.Helpers;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
 
 namespace BBCSportProject.Pages
 {
@@ -16,9 +14,10 @@ namespace BBCSportProject.Pages
             Driver = driver;
         }
 
-        public void ClickFootballLink()
+        public FootballPage ClickFootballLink()
         {
             sportNav.ClickFootballLink();
+            return new FootballPage(Driver);
         }
     }
 }

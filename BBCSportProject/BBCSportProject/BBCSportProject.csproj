@@ -47,6 +47,8 @@
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Pages\FootballPage.cs" />
     <Compile Include="Common\SportNav.cs" />
+    <Compile Include="Common\FootballNav.cs" />
+    <Compile Include="Pages\TablesPage.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

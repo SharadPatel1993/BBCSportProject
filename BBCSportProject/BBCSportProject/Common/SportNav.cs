@@ -15,8 +15,8 @@ namespace BBCSportProject.Common
             Driver = driver;
         }
 
-        [FindsBy(How = How.CssSelector, Using = "li[class=' primary-nav__item   '] a[href='/sport/football']")] private IWebElement FootballLink;
         [FindsBy(How = How.CssSelector, Using = "li[class=' primary-nav__item   '] a[href='/sport']")] private IWebElement HomeLink;
+        [FindsBy(How = How.CssSelector, Using = "li[class=' primary-nav__item   '] a[href='/sport/football']")] private IWebElement FootballLink;
 
         internal void ClickFootballLink()
         {
