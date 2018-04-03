@@ -45,6 +45,8 @@
     <Compile Include="Pages\SportHome.cs" />
     <Compile Include="Helpers\Waits.cs" />
     <Compile Include="Helpers\Extensions.cs" />
+    <Compile Include="Pages\FootballPage.cs" />
+    <Compile Include="Common\SportNav.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -53,6 +55,7 @@
     <Folder Include="Pages\" />
     <Folder Include="Helpers\" />
     <Folder Include="Tests\" />
+    <Folder Include="Common\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

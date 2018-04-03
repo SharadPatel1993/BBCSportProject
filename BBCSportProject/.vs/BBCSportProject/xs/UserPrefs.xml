@@ -1,16 +1,26 @@
 ﻿<Properties StartupConfiguration="{D9BE86DC-5D5B-46E1-966F-E08EDE9AE1B8}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Helpers/Extensions.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Pages/FootballPage.cs">
     <Files>
-      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="22" Column="1" />
-      <File FileName="BBCSportProject/Tests/TestBase.cs" Line="7" Column="11" />
+      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="14" Column="35" />
+      <File FileName="BBCSportProject/Tests/TestBase.cs" Line="8" Column="2" />
       <File FileName="BBCSportProject/Pages/BasePage.cs" Line="14" Column="6" />
-      <File FileName="BBCSportProject/Pages/SportHome.cs" Line="20" Column="31" />
-      <File FileName="BBCSportProject/Helpers/Extensions.cs" Line="4" Column="12" />
+      <File FileName="BBCSportProject/Pages/SportHome.cs" Line="1" Column="1" />
+      <File FileName="BBCSportProject/Helpers/Extensions.cs" Line="1" Column="1" />
+      <File FileName="BBCSportProject/Pages/FootballPage.cs" Line="19" Column="1" />
+      <File FileName="BBCSportProject/Common/SportNav.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="BBCSportProject" expanded="True" selected="True" />
+          <Node name="BBCSportProject" expanded="True">
+            <Node name="BBCSportProject" expanded="True">
+              <Node name="BBCSportProject" expanded="True">
+                <Node name="TableTests" expanded="True">
+                  <Node name="WhatTeamIsIn20thPosition" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
