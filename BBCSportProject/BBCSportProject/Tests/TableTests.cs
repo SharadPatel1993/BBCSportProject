@@ -10,10 +10,11 @@ namespace BBCSportProject.Tests
         [Test]
         public void WhatTeamIsIn20thPosition()
         {
-            var sportHome = new SportHome(Driver);
-            sportHome.ClickFootballLink()
-                     .ClickTablesLink();
-            Thread.Sleep(5000); //Debug only
+            var bbcHome = new BBCHome(Driver);
+            bbcHome.ClickSportLink()
+                   .ClickFootballLink()
+                   .ClickTablesLink()
+                   .GetTeamInPostion(20);
         }
 
         [Test]

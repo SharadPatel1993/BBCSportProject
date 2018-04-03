@@ -20,7 +20,7 @@ namespace BBCSportProject.Tests
         [SetUp]
         public void SetUp()
         {
-            Driver.Navigate().GoToUrl("http://www.bbc.co.uk/sport");
+            Driver.Navigate().GoToUrl("http://www.bbc.co.uk/");
         }
 
         [TearDown]

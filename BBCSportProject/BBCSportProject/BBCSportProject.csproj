@@ -49,6 +49,8 @@
     <Compile Include="Common\SportNav.cs" />
     <Compile Include="Common\FootballNav.cs" />
     <Compile Include="Pages\TablesPage.cs" />
+    <Compile Include="Pages\BBCHome.cs" />
+    <Compile Include="Common\BBCNav.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

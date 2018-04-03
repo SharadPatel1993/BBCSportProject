@@ -18,10 +18,9 @@ namespace BBCSportProject.Common
 
         [FindsBy(How = How.CssSelector, Using = "li[class=' secondary-nav__item   '] a[href='/sport/football/tables']")] private IWebElement TablesLink;
 
-        internal TablesPage ClickTablesLink()
+        internal void ClickTablesLink()
         {
             TablesLink.Click(Driver);
-            return new TablesPage(Driver);
         }
     }
 }

@@ -15,14 +15,16 @@ namespace BBCSportProject.Pages
             Driver = driver;
         }
 
-        public void ClickHomeLink()
+        public SportHome ClickHomeLink()
         {
             sportNav.ClickHomeLink();
+            return new SportHome(Driver);
         }
 
-        public void ClickTablesLink()
+        public TablesPage ClickTablesLink()
         {
             footballNav.ClickTablesLink();
+            return new TablesPage(Driver);
         }
 
     }
