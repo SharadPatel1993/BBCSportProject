@@ -10,12 +10,10 @@
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="BBCSportProject" expanded="True">
+          <Node name="BBCSportProject" expanded="True" selected="True">
             <Node name="BBCSportProject" expanded="True">
               <Node name="BBCSportProject" expanded="True">
-                <Node name="TableTests" expanded="True">
-                  <Node name="WhatTeamIsIn20thPosition" selected="True" />
-                </Node>
+                <Node name="TableTests" expanded="True" />
               </Node>
             </Node>
           </Node>
