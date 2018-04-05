@@ -1,10 +1,11 @@
 ﻿<Properties StartupConfiguration="{D9BE86DC-5D5B-46E1-966F-E08EDE9AE1B8}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Pages/BBCHome.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Tests/TableTests.cs">
     <Files>
-      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="17" Column="50" />
-      <File FileName="BBCSportProject/Pages/TablesPage.cs" Line="25" Column="41" />
+      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="1" Column="1" />
+      <File FileName="BBCSportProject/Pages/TablesPage.cs" Line="43" Column="10" />
       <File FileName="BBCSportProject/Pages/FootballPage.cs" Line="27" Column="43" />
-      <File FileName="BBCSportProject/Pages/BBCHome.cs" Line="1" Column="1" />
+      <File FileName="BBCSportProject/Pages/BBCHome.cs" Line="19" Column="39" />
+      <File FileName="BBCSportProject/Tests/TestBase.cs" Line="24" Column="10" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
@@ -24,9 +25,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/sharad/Desktop/Git/BBCSportProject/BBCSportProject/BBCSportProject/Tests/TableTests.cs" relfile="BBCSportProject/Tests/TableTests.cs" line="18" column="1" />
-    </BreakpointStore>
+    <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.ItemProperties.BBCSportProject PreferredExecutionTarget="MonoDevelop.Default" />

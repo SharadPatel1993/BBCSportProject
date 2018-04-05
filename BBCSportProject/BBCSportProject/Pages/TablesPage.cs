@@ -20,9 +20,26 @@ namespace BBCSportProject.Pages
 
         [FindsBy(How = How.CssSelector, Using = "td abbr[class='sp-u-abbr-on sp-u-abbr-off@m']")] private IList<IWebElement> Teams;
 
-        public void GetTeamInPostion(int position)
+        public string GetTeamInPostion(int position)
         {
-            //TODO
+            return Teams[position - 1].GetAttribute("title");
+        }
+
+        public int GetTeamPosition(string team)
+        {
+            int counter = 1;
+            int position = 0;
+            //List<string> TeamsList = new List<string>();
+            foreach (IWebElement teamRow in Teams)
+            {
+                if(teamRow.GetAttribute("title").ToLower() == team.ToLower())
+                {
+                    position = counter;
+                }
+                //TeamsList.Add(teamRow.GetAttribute("title"));
+                counter++;
+            }
+            return position;
         }
     }
 }

@@ -23,12 +23,6 @@ namespace BBCSportProject.Tests
             Driver.Navigate().GoToUrl("http://www.bbc.co.uk/");
         }
 
-        [TearDown]
-        public void TearDown()
-        {
-            Driver?.Quit();
-        }
-
         [OneTimeTearDown]
         public void OneTimeTearDown()
         {
