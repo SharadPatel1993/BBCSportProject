@@ -3,21 +3,21 @@ using OpenQA.Selenium;
 
 namespace BBCSportProject.Pages
 {
-    public class BBCHome : BasePage
+    public class BBCHomePage : BasePage
     {
         private IWebDriver Driver { get; }
         private static readonly By pageSelector = By.Id("hp-bbc-homepage-content");
-        private BBCNav sportNav => new BBCNav(Driver);
+        private BBCNav BBCNav => new BBCNav(Driver);
 
-        public BBCHome(IWebDriver driver) : base(driver, pageSelector)
+        public BBCHomePage(IWebDriver driver) : base(driver, pageSelector)
         {
             Driver = driver;
         }
 
-        public SportHome ClickSportLink()
+        public SportHomePage ClickSportLink()
         {
-            sportNav.ClickSportLink();
-            return new SportHome(Driver);
+            BBCNav.ClickSportLink();
+            return new SportHomePage(Driver);
         }
     }
 }

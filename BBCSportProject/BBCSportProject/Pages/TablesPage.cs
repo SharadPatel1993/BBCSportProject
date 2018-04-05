@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using BBCSportProject.Common;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Support.PageObjects;
@@ -10,8 +9,8 @@ namespace BBCSportProject.Pages
     {
         private IWebDriver Driver { get; }
         private static readonly By pageSelector = By.CssSelector("h1[id='page']");
-        private SportNav sportNav => new SportNav(Driver);
-        private FootballNav footballNav => new FootballNav(Driver);
+        private SportNav SportNav => new SportNav(Driver);
+        private FootballNav FootballNav => new FootballNav(Driver);
 
         public TablesPage(IWebDriver driver) : base(driver, pageSelector)
         {
@@ -20,26 +19,26 @@ namespace BBCSportProject.Pages
 
         [FindsBy(How = How.CssSelector, Using = "td abbr[class='sp-u-abbr-on sp-u-abbr-off@m']")] private IList<IWebElement> Teams;
 
+        private List<string> GetTeamsList()
+        {
+            List<string> teamsList = new List<string>();
+
+            foreach (IWebElement teamRow in Teams)
+            {
+                teamsList.Add(teamRow.GetAttribute("title").ToUpper());
+            }
+
+            return teamsList;
+        }
+
         public string GetTeamInPostion(int position)
         {
-            return Teams[position - 1].GetAttribute("title");
+            return GetTeamsList()[position - 1];
         }
 
         public int GetTeamPosition(string team)
         {
-            int counter = 1;
-            int position = 0;
-            //List<string> TeamsList = new List<string>();
-            foreach (IWebElement teamRow in Teams)
-            {
-                if(teamRow.GetAttribute("title").ToLower() == team.ToLower())
-                {
-                    position = counter;
-                }
-                //TeamsList.Add(teamRow.GetAttribute("title"));
-                counter++;
-            }
-            return position;
+            return GetTeamsList().IndexOf(team.ToUpper()) + 1;
         }
     }
 }

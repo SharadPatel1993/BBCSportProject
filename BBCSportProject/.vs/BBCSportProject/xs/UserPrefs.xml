@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{D9BE86DC-5D5B-46E1-966F-E08EDE9AE1B8}|Unit Tests">
-  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Tests/TableTests.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BBCSportProject/Pages/BasePage.cs">
     <Files>
-      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="1" Column="1" />
-      <File FileName="BBCSportProject/Pages/TablesPage.cs" Line="43" Column="10" />
-      <File FileName="BBCSportProject/Pages/FootballPage.cs" Line="27" Column="43" />
-      <File FileName="BBCSportProject/Pages/BBCHome.cs" Line="19" Column="39" />
-      <File FileName="BBCSportProject/Tests/TestBase.cs" Line="24" Column="10" />
+      <File FileName="BBCSportProject/Tests/TableTests.cs" Line="7" Column="39" />
+      <File FileName="BBCSportProject/Pages/SportHomePage.cs" Line="18" Column="48" />
+      <File FileName="BBCSportProject/Pages/BBCHomePage.cs" Line="20" Column="37" />
+      <File FileName="BBCSportProject/Pages/TablesPage.cs" Line="13" Column="68" />
+      <File FileName="BBCSportProject/Pages/BasePage.cs" Line="16" Column="1" />
     </Files>
     <Pads>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">

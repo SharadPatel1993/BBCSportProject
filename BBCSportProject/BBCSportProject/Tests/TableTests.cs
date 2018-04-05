@@ -6,26 +6,27 @@ namespace BBCSportProject.Tests
     [TestFixture]
     public class TableTests : TestBase
     {
+        private string expected20Team = "West Bromwich Albion";
+        private int expectedCpPosition = 17;
+
         [Test]
         public void WhatTeamIsIn20thPosition()
         {
-            var bbcHome = new BBCHome(Driver);
-            var team = bbcHome.ClickSportLink()
-                              .ClickFootballLink()
-                              .ClickTablesLink()
-                              .GetTeamInPostion(20).ToUpper();
-            Assert.AreEqual(team, "WEST BROMWICH ALBION");
+            var team = new BBCHomePage(Driver).ClickSportLink()
+                                          .ClickFootballLink()
+                                          .ClickTablesLink()
+                                          .GetTeamInPostion(20);
+            Assert.AreEqual(team, expected20Team.ToUpper());
         }
 
         [Test]
         public void WhatPositionIsCrystalPalaceInTheLeague()
         {
-            var bbcHome = new BBCHome(Driver);
-            var position = bbcHome.ClickSportLink()
-                              .ClickFootballLink()
-                              .ClickTablesLink()
-                              .GetTeamPosition("Crystal Palace");
-            Assert.AreEqual(position, 17);
+            var position = new BBCHomePage(Driver).ClickSportLink()
+                                              .ClickFootballLink()
+                                              .ClickTablesLink()
+                                              .GetTeamPosition("Crystal Palace");
+            Assert.AreEqual(position, expectedCpPosition);
         }
     }
 }

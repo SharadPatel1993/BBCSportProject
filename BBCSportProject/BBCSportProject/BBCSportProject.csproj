@@ -42,14 +42,14 @@
     <Compile Include="Tests\TableTests.cs" />
     <Compile Include="Tests\TestBase.cs" />
     <Compile Include="Pages\BasePage.cs" />
-    <Compile Include="Pages\SportHome.cs" />
+    <Compile Include="Pages\SportHomePage.cs" />
     <Compile Include="Helpers\Waits.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Pages\FootballPage.cs" />
     <Compile Include="Common\SportNav.cs" />
     <Compile Include="Common\FootballNav.cs" />
     <Compile Include="Pages\TablesPage.cs" />
-    <Compile Include="Pages\BBCHome.cs" />
+    <Compile Include="Pages\BBCHomePage.cs" />
     <Compile Include="Common\BBCNav.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -6,7 +6,7 @@ namespace BBCSportProject.Pages
 {
     public class BasePage
     {
-        public BasePage(IWebDriver driver, By pageSelector)
+        internal BasePage(IWebDriver driver, By pageSelector)
         {
             Waits.WaitForElementToExist(driver, pageSelector);
             PageFactory.InitElements(driver, this);

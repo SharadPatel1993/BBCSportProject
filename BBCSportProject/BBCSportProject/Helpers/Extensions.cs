@@ -2,9 +2,9 @@
 
 namespace BBCSportProject.Helpers
 {
-    public static class Extensions
+    internal static class Extensions
     {
-        public static IWebElement Click(this IWebElement element, IWebDriver driver)
+        internal static IWebElement Click(this IWebElement element, IWebDriver driver)
         {
             Waits.WaitForElementToBeClickable(driver, element);
             element.Click();

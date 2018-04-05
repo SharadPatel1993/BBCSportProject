@@ -7,23 +7,18 @@ namespace BBCSportProject.Pages
     {
         private IWebDriver Driver { get; }
         private static readonly By pageSelector = By.Id("sport-container");
-        private SportNav sportNav => new SportNav(Driver);
-        private FootballNav footballNav => new FootballNav(Driver);
+        private BBCNav BBCNav => new BBCNav(Driver);
+        private SportNav SportNav => new SportNav(Driver);
+        private FootballNav FootballNav => new FootballNav(Driver);
 
         public FootballPage(IWebDriver driver) : base(driver, pageSelector)
         {
             Driver = driver;
         }
 
-        public SportHome ClickHomeLink()
-        {
-            sportNav.ClickHomeLink();
-            return new SportHome(Driver);
-        }
-
         public TablesPage ClickTablesLink()
         {
-            footballNav.ClickTablesLink();
+            FootballNav.ClickTablesLink();
             return new TablesPage(Driver);
         }
 
