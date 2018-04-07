@@ -27,15 +27,21 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
-    <Reference Include="WebDriver">
-      <HintPath>..\packages\Selenium.WebDriver.3.11.0\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
     <Reference Include="System.Drawing" />
-    <Reference Include="WebDriver.Support">
-      <HintPath>..\packages\Selenium.Support.3.11.0\lib\net45\WebDriver.Support.dll</HintPath>
-    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>..\packages\NUnit.3.10.1\lib\net45\nunit.framework.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
+    <Reference Include="SeleniumExtras.PageObjects">
+      <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.3.11.0\lib\net45\SeleniumExtras.PageObjects.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver">
+      <HintPath>..\packages\Selenium.WebDriver.3.11.1\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WebDriver.Support">
+      <HintPath>..\packages\Selenium.Support.3.11.1\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -46,11 +52,11 @@
     <Compile Include="Helpers\Waits.cs" />
     <Compile Include="Helpers\Extensions.cs" />
     <Compile Include="Pages\FootballPage.cs" />
-    <Compile Include="Common\SportNav.cs" />
-    <Compile Include="Common\FootballNav.cs" />
+    <Compile Include="Navs\SportNav.cs" />
+    <Compile Include="Navs\FootballNav.cs" />
     <Compile Include="Pages\TablesPage.cs" />
     <Compile Include="Pages\BBCHomePage.cs" />
-    <Compile Include="Common\BBCNav.cs" />
+    <Compile Include="Navs\BBCNav.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -59,7 +65,7 @@
     <Folder Include="Pages\" />
     <Folder Include="Helpers\" />
     <Folder Include="Tests\" />
-    <Folder Include="Common\" />
+    <Folder Include="Navs\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

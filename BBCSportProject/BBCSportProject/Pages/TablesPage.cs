@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using BBCSportProject.Common;
+using BBCSportProject.Navs;
 using OpenQA.Selenium;
-using OpenQA.Selenium.Support.PageObjects;
+using SeleniumExtras.PageObjects;
 
 namespace BBCSportProject.Pages
 {
@@ -17,7 +17,7 @@ namespace BBCSportProject.Pages
             Driver = driver;
         }
 
-        [FindsBy(How = How.CssSelector, Using = "td abbr[class='sp-u-abbr-on sp-u-abbr-off@m']")] private IList<IWebElement> Teams;
+        [FindsBy(How = How.CssSelector, Using = "td abbr[class='sp-u-abbr-on sp-u-abbr-off@m']")] private IList<IWebElement> Teams = null;
 
         private List<string> GetTeamsList()
         {

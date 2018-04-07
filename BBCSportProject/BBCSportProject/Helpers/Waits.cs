@@ -10,12 +10,12 @@ namespace BBCSportProject.Helpers
 
         internal static bool WaitForElementToExist(IWebDriver driver, By pageSelector)
         {
-            return WaitCondition(driver, ExpectedConditions.ElementExists(pageSelector));
+            return WaitCondition(driver, SeleniumExtras.WaitHelpers.ExpectedConditions.ElementExists(pageSelector));
         }
 
         internal static bool WaitForElementToBeClickable(IWebDriver driver, IWebElement element)
         {
-            return WaitCondition(driver, ExpectedConditions.ElementToBeClickable(element));
+            return WaitCondition(driver, SeleniumExtras.WaitHelpers.ExpectedConditions.ElementToBeClickable(element));
         }
 
         private static bool WaitCondition(IWebDriver driver, Func<IWebDriver, IWebElement> expectedConditions)

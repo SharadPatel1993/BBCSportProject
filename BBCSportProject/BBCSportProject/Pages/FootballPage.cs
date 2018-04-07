@@ -1,4 +1,4 @@
-﻿using BBCSportProject.Common;
+﻿using BBCSportProject.Navs;
 using OpenQA.Selenium;
 
 namespace BBCSportProject.Pages
