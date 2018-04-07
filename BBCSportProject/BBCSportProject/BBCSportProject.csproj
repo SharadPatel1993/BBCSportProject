@@ -43,6 +43,9 @@
     <Reference Include="WebDriver.Support">
       <HintPath>..\packages\Selenium.Support.3.11.1\lib\net45\WebDriver.Support.dll</HintPath>
     </Reference>
+    <Reference Include="Selenium.StrongTyped">
+      <HintPath>..\packages\Selenium.StrongTyped.0.0.4\lib\Selenium.StrongTyped.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Tests\TableTests.cs" />
