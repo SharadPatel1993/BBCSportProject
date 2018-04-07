@@ -1,4 +1,4 @@
-# BBCSportProject
+# BBC Sport Project
 Selenium framework workshop project
 
 ## Workshop 1
