@@ -8,11 +8,11 @@ namespace BBCSportProject.Pages
     public class TablesPage : BasePage
     {
         private IWebDriver Driver { get; }
-        private static readonly By pageSelector = By.Id("u809191661188379");
+        private static readonly By pageSelector = By.Id("page");
         private SportNav SportNav => new SportNav(Driver);
         private FootballNav FootballNav => new FootballNav(Driver);
 
-        public TablesPage(IWebDriver driver) : base(driver, pageSelector, true)
+        public TablesPage(IWebDriver driver) : base(driver, pageSelector)
         {
             Driver = driver;
         }
