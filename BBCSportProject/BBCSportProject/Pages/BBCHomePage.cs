@@ -6,10 +6,10 @@ namespace BBCSportProject.Pages
     public class BBCHomePage : BasePage
     {
         private IWebDriver Driver { get; }
-        private static readonly By pageSelector = By.Id("hp-bbc-homepage-content");
+        private static readonly By pageSelector = By.CssSelector("div[role='main']");
         private BBCNav BBCNav => new BBCNav(Driver);
 
-        public BBCHomePage(IWebDriver driver) : base(driver, pageSelector)
+        public BBCHomePage(IWebDriver driver) : base(driver, pageSelector, true)
         {
             Driver = driver;
         }

@@ -8,16 +8,26 @@ namespace BBCSportProject.Pages
     public class TablesPage : BasePage
     {
         private IWebDriver Driver { get; }
-        private static readonly By pageSelector = By.CssSelector("h1[id='page']");
+        private static readonly By pageSelector = By.Id("u809191661188379");
         private SportNav SportNav => new SportNav(Driver);
         private FootballNav FootballNav => new FootballNav(Driver);
 
-        public TablesPage(IWebDriver driver) : base(driver, pageSelector)
+        public TablesPage(IWebDriver driver) : base(driver, pageSelector, true)
         {
             Driver = driver;
         }
 
-        [FindsBy(How = How.CssSelector, Using = "td abbr[class='sp-u-abbr-on sp-u-abbr-off@m']")] private IList<IWebElement> Teams = null;
+        [FindsBy(How = How.CssSelector, Using = "td abbr")] private IList<IWebElement> Teams = null;
+
+        public string GetTeamInPostion(int position)
+        {
+            return GetTeamsList()[position - 1];
+        }
+
+        public int GetTeamPosition(string team)
+        {
+            return GetTeamsList().IndexOf(team.ToUpper()) + 1;
+        }
 
         private List<string> GetTeamsList()
         {
@@ -29,16 +39,6 @@ namespace BBCSportProject.Pages
             }
 
             return teamsList;
-        }
-
-        public string GetTeamInPostion(int position)
-        {
-            return GetTeamsList()[position - 1];
-        }
-
-        public int GetTeamPosition(string team)
-        {
-            return GetTeamsList().IndexOf(team.ToUpper()) + 1;
         }
     }
 }
