@@ -7,7 +7,7 @@ namespace BBCSportProject.Tests
     public class TableTests : TestBase
     {
         private string expected20Team = "West Bromwich Albion";
-        private int expectedCpPosition = 17;
+        private int expectedCpPosition = 16;
 
         [Test]
         public void WhatTeamIsIn20thPosition()
