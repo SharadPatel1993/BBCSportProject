@@ -9,6 +9,7 @@ namespace BBCSportProject.Pages
     {
         private IWebDriver Driver { get; }
         private static readonly By pageSelector = By.Id("page");
+        private BBCNav BBCNav => new BBCNav(Driver);
         private SportNav SportNav => new SportNav(Driver);
         private FootballNav FootballNav => new FootballNav(Driver);
 
